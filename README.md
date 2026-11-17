@@ -1,4 +1,4 @@
-[![ci](https://github.com/pontevin/CICD-GithubActions-Notely/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/pontevin/CICD-GithubActions-Notely/actions/workflows/ci.yml)
+[![ci](https://github.com/pontevin/CICD-GithubActions-Notely/actions/workflows/ci.yml/badge.svg)](https://github.com/pontevin/CICD-GithubActions-Notely/actions/workflows/ci.yml)
 
 # learn-cicd-typescript-starter (Notely)
 
