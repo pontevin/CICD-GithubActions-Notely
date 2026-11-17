@@ -20,9 +20,6 @@ export async function getNote(id: string) {
 
 export async function getNotesForUser(id: string) {
   assertDbConnection();
-  const rows = await db!
-    .select()
-    .from(notesTable)
-    .where(eq(notesTable.userId, id));
+  const rows = await db!.select().from(notesTable).where(eq(notesTable.userId, id));
   return rows;
 }

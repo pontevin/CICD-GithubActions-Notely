@@ -4,9 +4,7 @@ import { getUser } from "../db/queries/users.js";
 import { User } from "../db/schema.js";
 import { getAPIKey } from "./auth.js";
 
-export function middlewareAuth(
-  handler: (req: Request, res: Response, user: User) => void,
-) {
+export function middlewareAuth(handler: (req: Request, res: Response, user: User) => void) {
   return async (req: Request, res: Response) => {
     try {
       const apiKey = getAPIKey(req.headers);

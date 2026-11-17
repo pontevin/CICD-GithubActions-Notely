@@ -14,9 +14,6 @@ export async function createUser(user: NewUser) {
 
 export async function getUser(apiKey: string) {
   assertDbConnection();
-  const rows = await db!
-    .select()
-    .from(usersTable)
-    .where(eq(usersTable.apiKey, apiKey));
+  const rows = await db!.select().from(usersTable).where(eq(usersTable.apiKey, apiKey));
   return rows.length > 0 ? rows[0] : null;
 }
